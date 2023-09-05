@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 
-const TypewriterEffect = ({ text, delay }) => {
+const Typewriter = ({ text, delay }) => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,4 +21,4 @@ const TypewriterEffect = ({ text, delay }) => {
   return <code className="font-mono font-bold text-center">{displayText}</code>;
 };
 
-export default TypewriterEffect;
+export default Typewriter;
