@@ -30,11 +30,11 @@ jobs:
         run: pnpm install
         
       - name: Build site
-        run: pnpm run build
+        run: pnpm build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/
+          publish_dir: ./build/
           publish_branch: gh-pages
