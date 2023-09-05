@@ -9,7 +9,6 @@ interface LayoutProps {
 const TypeWriter:React.FC<LayoutProps> = ({ text, delay }) => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       if (currentIndex < text.length) {
