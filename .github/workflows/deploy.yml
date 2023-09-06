@@ -3,6 +3,7 @@ name: Deploy
 on:
   push:
     branches: ["main"]
+  # 如果需要手动触发workflow, 必须加上workflow_dispatch
   workflow_dispatch:
     inputs:
       logLevel:
@@ -55,5 +56,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/
+          publish_dir: ./out/
           publish_branch: gh-pages

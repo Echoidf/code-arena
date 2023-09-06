@@ -17,8 +17,8 @@ if (isGithubActions) {
 const nextConfig = {
   assetPrefix,
   basePath,
+  output: 'export',
   reactStrictMode: true,
-  distDir: `.build`,
   images: {
     unoptimized: true,
   },
