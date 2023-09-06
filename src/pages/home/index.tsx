@@ -76,14 +76,14 @@ export default function Home() {
               <Card
                 style={{ width: 300 }}
                 hoverable
-                cover={<img alt="code" src="/code.png" />}
+                cover={<img alt="code" src="code.png" />}
               >
                 <Meta title="添加题目" description="add title" />
               </Card>
               <Card
                 style={{ width: 300 }}
                 hoverable
-                cover={<img alt="code" src="/book.jpg" />}
+                cover={<img alt="code" src="book.jpg" />}
               >
                 <Meta title="我的题目" description="My title" />
               </Card>
